@@ -16,8 +16,8 @@
 ## 文件结构 (Files)
 
 ```text
-├── main.cpp                # 核心 C++ 源代码
-├── images/                 # 输入的测试图片序列 (S1.jpg - S7.jpg)
+├── panorama.cpp                # 核心 C++ 源代码
+├── images/                 # 输入的测试图片序列
 ├── panorama_cropped.jpg    # (生成的) 最终拼接结果
 └── README.md
 ```
@@ -29,10 +29,10 @@
 - C++ 编译器 (GCC/Clang/MSVC)
 
 ### 运行步骤
-1.  确保 `main.cpp` 中的图片读取路径正确（默认读取 S1.jpg 至 S7.jpg）。
+1.  确保 `panorama.cpp` 中的图片读取路径正确（默认读取 S1.jpg 至 S7.jpg）。
 2.  编译代码：
     ```bash
-    g++ main.cpp -o panorama `pkg-config --cflags --libs opencv4`
+    g++ panorama.cpp -o panorama `pkg-config --cflags --libs opencv4`
     ```
 3.  运行程序：
     ```bash
